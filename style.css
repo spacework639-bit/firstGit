@@ -1,0 +1,62 @@
+/* style.css - Clean & Simple */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+/* Ultra-compact vertical scroll */
+/* Compact vertical scroll box */
+/* Compact vertical scroll box */
+/* Compact vertical scroll box - no horizontal scroll */
+.food-container-vertical {
+    max-height: 150px;       /* short container */
+    overflow-y: auto;        /* vertical scroll only */
+    overflow-x: hidden;      /* hide horizontal scroll */
+    width: 250px;            /* fixed width */
+    margin-top: 15px;
+    padding: 0;
+    border-radius: 5px;      
+    background-color: #fff;  
+}
+
+/* Minimal scrollbar */
+.food-container-vertical::-webkit-scrollbar {
+    width: 5px;
+}
+.food-container-vertical::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+/* Food items - compact */
+.food-item {
+    padding: 6px 10px;       
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.2;
+    cursor: pointer;
+    white-space: nowrap;        /* prevent long text from wrapping */
+    overflow: hidden;           /* hide overflow */
+    text-overflow: ellipsis;    /* show ... if text too long */
+    transition: transform 0.2s, background 0.2s;
+}
+
+/* Hover effect - zoom */
+.food-item:hover {
+    transform: scale(1.1);
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+
